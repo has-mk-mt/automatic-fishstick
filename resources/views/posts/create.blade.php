@@ -20,7 +20,7 @@
         <div>
             <label>
                 出来事
-                <textarea name="event">{{ old('event') }}</textarea>
+                <textarea name="event" id="textarea_form">{{ old('event') }}</textarea>
             </label>
             @error('event')
             <p>{{ $message }}</p>
@@ -30,7 +30,7 @@
         <div>
             <label>
                 思考
-                <textarea name="thought">{{ old('thought') }}</textarea>
+                <textarea name="thought" id="textarea_form">{{ old('thought') }}</textarea>
             </label>
             @error('thought')
             <p>{{ $message }}</p>
@@ -40,16 +40,14 @@
         <div>
             <label>
                 感情
-                <textarea name="emotion">{{ old('emotion') }}</textarea>
+                <textarea name="emotion" id="textarea_form">{{ old('emotion') }}</textarea>
             </label>
             @error('emotion')
             <p>{{ $message }}</p>
             @enderror
         </div>
 
-        <div>
-            <button>投稿する！</button>
-        </div>
+        <button class="create_post_btn">投稿する！</button>
     </form>
         <p class="back-link">
             <a href="{{ route('posts.index') }}">戻る</a>
