@@ -6,46 +6,42 @@
     <header></header>
     <main>
         <h1>タイトル </h1>
+        <div class="main_pic">
+
+            <img src="{{ asset('img/IMG_6013.2.jpg') }}">
+          </div>
         <section class="about">
             <p>せつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめいせつめい</p>
         </section>
             {{-- <a href="{{ route('posts.create') }}">投稿はこちら</a> --}}
-        <a href="{{ route('posts.create') }}">投稿はこちら</a>
+        <a href="{{ route('posts.create') }}" class="post">投稿はこちら</a>
 
         <section class="pics">
             <div class="box">
 
                 <div class="box_pic">
-                  <img src="">
+                  <img src="{{ asset('img/IMG_6006.2.jpg') }}">
                 </div>
 
                 <div class="box_pic">
-                  <img src="">
+                  <img src="{{ asset('img/IMG_6008.2.jpg') }}">
                 </div>
 
                 <div class="box_pic">
-                  <img src="">
+                  <img src="{{ asset('img/IMG_6061.2.jpg') }}">
                 </div>
 
                 <div class="box_pic">
-                  <img src="">
+                  <img src="{{ asset('img/IMG_6065.2.jpg') }}">
                 </div>
 
                 <div class="box_pic">
-                  <img src="">
-                </div>
+                    <img src="{{ asset('img/IMG_6014.2.jpg') }}">
+                  </div>
 
-                <div class="box_pic">
-                  <img src="">
-                </div>
-
-                <div class="box_pic">
-                  <img src="">
-                </div>
-
-                <div class="box_pic">
-                  <img src="">
-                </div>
+                  <div class="box_pic">
+                    <img src="{{ asset('img/IMG_6025.2.jpg') }}">
+                  </div>
 
               </div>
 
@@ -55,7 +51,7 @@
             <h2>皆さんの投稿</h2>
             <ul>
                 @forelse ($posts as $post)
-                <li>
+                <li class="index_li">
                     {{-- <a href="{{ route('posts.show', $post->id) }}">{{ $post->title }}</a> --}}
                     <a href="{{ route('posts.show', $post) }}">{{ $post->title }}</a>
                 </li>
@@ -65,7 +61,7 @@
             </ul>
         </section>
         <div>
-            <a href="{{ route('posts.create') }}">投稿はこちら</a>
+            <a href="{{ route('posts.create') }}" class="post">投稿はこちら</a>
         </div>
     </main>
     <footer></footer>
