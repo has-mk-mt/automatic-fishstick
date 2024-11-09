@@ -12,6 +12,7 @@
 
             <label>
                 <h2>タイトル</h2>
+
                 <input type="text" name='title' value="{{ old('title', $post->title) }}">
             </label>
             @error('title')

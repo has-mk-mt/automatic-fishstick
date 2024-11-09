@@ -1,8 +1,7 @@
 /* index ここから*/
 
 html {
-    background: linear-gradient(to bottom, rgb(255, 255, 209), rgb(255, 239, 161),rgb(255, 204, 127))
-
+    background: linear-gradient(to bottom, rgb(255, 255, 209), rgb(255, 239, 161),rgb(255, 204, 127));
 }
 
 header {
@@ -208,6 +207,7 @@ input[type="text"] {
     text-decoration: none;
 }
 
+
 /* button{
     margin: 16px auto;
     font-size: 1.6em;
@@ -250,6 +250,65 @@ main .show{
     width: 60%;
     background-color: rgb(238, 255, 231);
     margin:16px auto;
+}
+
+.show_delete_btn {
+    margin: 16px auto;
+    font-size: 1em;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: coral;
+    color: rgb(255, 255, 247);
+}
+
+.show_post{
+    background-color: rgb(255, 255, 232);
+    width: 80%;
+    margin: 16px auto;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.comment_area ul {
+    background-color:rgb(238, 255, 231);
+    width: 70%;
+    list-style-type:none;
+    margin:16px auto;
+    padding: 0;
+}
+
+.comment_li {
+    background-color:blanchedalmond;
+    border-bottom: 0.6px;
+    border: rgb(191, 144, 87) solid;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+.comment_delete_btn {
+    margin: 0 auto;
+    font-size: 0.5em;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-color: coral;
+    color: rgb(255, 255, 247);
+}
+
+#comment_form {
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    height: 10em;
+    width: 80%;
 }
 
 .show_delete_btn {
