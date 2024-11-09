@@ -1,18 +1,26 @@
 <x-layout>
     <x-slot:title>
-        {{ $post->title }} | お悩みサイト
+        {{ $post->title }} | お茶の間
     </x-slot>
 
     <main class="show">
         <h1>
             {{ $post->title }}
-            <a href="{{ route('posts.edit', $post) }}">編集する</a>
-            <form method="post" action="{{ route('posts.destroy', $post) }}" id="delete-form">
-                @method('DELETE')
-                @csrf
-                <button>削除する！</button>
-            </form>
         </h1>
+        <div class="show_btn_area">
+            <div class="edit-btn2">
+                <a href="{{ route('posts.edit', $post) }}" class="edit_btn">編集する！</a>
+            </div>
+            <div class="delete_btn2">
+                <form method="post" action="{{ route('posts.destroy', $post) }}" id="delete-form">
+                    @method('DELETE')
+                    @csrf
+                    <button class="show_delete_btn">削除する！</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="show_post">
         <p>
             <div>
                 <h2>出来事</h2>
@@ -29,16 +37,18 @@
                 <p>{!! nl2br(e($post->emotion)) !!}</p>
             </div>
         </p>
+    </div>
 
+    <div class="comment_area">
         <h2>コメント</h2>
         <ul>
         @forelse ($post->comments as $comment)
-            <li>
+            <li class="comment_li">
                 {{ $comment->body }}
                 <form class="comment-delete-form" method= "post" action="{{ route('posts.comments.destroy', [$post,$comment]) }}">
                     @csrf
                     @method('DELETE')
-                    <button>削除する</button>
+                    <button class="comment_delete_btn">削除する</button>
                 </form>
             </li>
 
@@ -46,21 +56,24 @@
             <li>コメントはありません</li>
         @endforelse
         </ul>
+    </div>
 
+    <div class="comment_area">
         <h2>コメントを投稿する</h2>
+    </div>
 
         <div>
         <form method="post" action="{{ route('posts.comments.store', $post) }}">
             @csrf
             <div>
-                <textarea name="body"></textarea>
+                <textarea name="body" id="comment_form"></textarea>
                 @error('body')
                 <p class="error">{{ $message }}</p>
                 @enderror
             </div>
 
             <div>
-                <button>投稿する</button>
+                <button class="comment_post_btn">投稿する</button>
             </div>
         </form>
         </div>

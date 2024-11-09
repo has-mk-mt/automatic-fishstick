@@ -1,8 +1,18 @@
 /* index ここから*/
 
+html {
+    background: linear-gradient(to bottom, rgb(255, 255, 209), rgb(255, 239, 161),rgb(255, 204, 127))
+
+}
+
 header {
     height: 120px;
-    background-color: bisque;
+    background: radial-gradient( rgb(255, 239, 161),rgb(255, 204, 127));
+    /* background-color: bisque; */
+    color: rgb(254, 251, 245);
+    font-family: cursive;
+    font-size: 80px;
+    text-align: center;
 }
 
 main {
@@ -10,44 +20,116 @@ main {
     margin:16px auto;
     text-align: center;
      /* width: 400px; */
+     /* background: linear-gradient(to bottom, rgb(238, 255, 231),rgb(186, 255, 161)); */
      background-color: rgb(238, 255, 231);
-}
+     border-radius: 4em;
+    }
 
 main h1 {
-    font-size: 20px;
+    font-family: cursive;
+    padding-top: 10px;
+    font-size: 60px;
+    /* color: rgb(178, 153, 116); */
+    color: rgb(85, 129, 74);
+}
+
+.main_pic{
+    /* background : lightblue; */
+    width: 80%;
+    margin: 16px auto;
+}
+
+.main_pic img{
+    width: 100%;
 }
 
 main .about {
     width: 60%;
-    /* text-align: center; */
     margin:16px auto;
+    font-size: 20px;
 }
 
-main .pics{
-    height: 200px;
+/* main .pics{
+    height: 400px;
     width: 60%;
-    background-color: blanchedalmond;
-    margin:16px auto;
-}
+    /* background-color: blanchedalmond; */
+    /* margin:16px auto;
+} */ */
 
 .posts {
-    width: 400px;
+    height: 800px;
     margin: 16px auto;
-    background-color: rgb(255, 255, 247)
+    background-color: rgb(80, 42, 215)
+}
+
+.posts h2{
+    color: rgb(85, 129, 74);
 }
 
 .posts ul {
-    list-style-type: none;
+    background-color: rgb(238, 255, 231);
+    width: 70%;
+    list-style-type:none;
     margin:16px auto;
+    padding: 0;
+    border-radius: 10px;
 }
 
-main a {
-    margin: 16px auto;
+
+
+.posts ul li{
+    font-size: 30px;
+    margin: 8px auto;
+    background-color:blanchedalmond;
+    border-bottom: 0.6px;
+    border: rgb(191, 144, 87) solid;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding: 0.5em 0;
 }
+
+.post{
+    margin: 16px auto;
+    font-size: 1.6em;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-color: coral;
+    color: rgb(255, 255, 247);
+    text-decoration: none;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width:100%;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 30px;
+    padding-left :50px;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: blanchedalmond;
+  }
+
+  .box_pic {
+    width: 280px;
+  }
+
+  .box_pic img {
+    width: 100%;
+  }
+
+
 
 footer {
     height: 120px;
-    background-color: bisque;
+    background: radial-gradient( rgb(255, 239, 161),rgb(255, 255, 209));
+    /* background-color: bisque; */
 }
 
 
@@ -75,6 +157,7 @@ main .create{
     margin:16px auto;
     text-align: center;
      /* width: 400px; */
+     /* background: linear-gradient(to bottom, rgb(238, 255, 231),rgb(186, 255, 161)); */
      background-color: rgb(238, 255, 231);
 }
 
@@ -83,32 +166,199 @@ main .create{
     margin:16px auto;
 }
 
-.back-link {
-    text-align: right;
-}
 form div + div {
     margin-top: 8px;
 }
 
-input[type="text"],
-textarea {
+input[type="text"] {
     width: 100%;
     box-sizing: border-box;
     padding: 8px;
     height: 5em;
+    border-radius: 10px;
 }
+
+#textarea_form {
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    height: 10em;
+}
+
+.post_lbl {
+    color: rgb(132, 106, 76);
+}
+
+.post_lbl h2{
+    padding-bottom: 5px;
+}
+
+.create_post_btn {
+    margin: 16px auto;
+    font-size: 1.6em;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-color: coral;
+    color: rgb(255, 255, 247);
+    text-decoration: none;
+}
+
+/* button{
+    margin: 16px auto;
+    font-size: 1.6em;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-color: coral;
+    color: rgb(255, 255, 247);
+} */
 
 
 /* show  */
 
+.show_btn_area {
+    display: flex;
+}
+
+.edit_btn {
+    margin: 16px auto;
+    margin-right: 2em;
+    margin-left: 300px;
+    font-size: 1em;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(170, 222, 115);
+    color: rgb(255, 255, 247);
+    border: 2px solid;
+    border-color: rgb(43, 36, 21);
+}
+
 main .show{
     height: 200px;
     width: 60%;
-    background-color: blanchedalmond;
+    background-color: rgb(238, 255, 231);
     margin:16px auto;
+}
+
+.show_delete_btn {
+    margin: 16px auto;
+    font-size: 1em;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: coral;
+    color: rgb(255, 255, 247);
+}
+
+.show_post{
+    background-color: rgb(255, 255, 232);
+    width: 80%;
+    margin: 16px auto;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.show_post h2 {
+    color: rgb(144, 100, 43);
+}
+
+.comment_area h2 {
+    color: rgb(144, 100, 43);
+}
+
+.comment_area ul {
+    background-color:rgb(238, 255, 231);
+    width: 70%;
+    list-style-type:none;
+    margin:16px auto;
+    padding: 0;
+}
+
+.comment_li {
+    background-color:blanchedalmond;
+    border-bottom: 0.6px;
+    border: rgb(191, 144, 87) solid;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+.comment_delete_btn {
+    margin: 0 auto;
+    font-size: 0.5em;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-color: coral;
+    color: rgb(255, 255, 247);
+}
+
+#comment_form {
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    height: 10em;
+    width: 80%;
 }
 
 
 .comment-delete-form {
     display: inline-block;
+    margin: 8px auto;
+    font-size: 1em;
+    line-height: 1.5;
+    position: relative;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5em;
+    /* background-color: rgb(197, 228, 255); */
+    color: rgb(255, 255, 247);
+}
+
+a {
+    text-decoration: none;
+}
+
+.comment_post_btn {
+    margin: 16px auto;
+    font-size: 1.6em;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-color: coral;
+    color: rgb(255, 255, 247);
+    text-decoration: none;
+}
+
+
+.back-link {
+    margin: 120px auto;
+    background-color: rgb(170, 222, 115);
+    padding: 10px;
+    width: 40px;
+    text-decoration: none;
+    border-radius: 1em;
+    border: 1.5px solid;
+    border-color: rgb(43, 36, 21);
 }
