@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:title>
-        {{ $post->title }} | お悩みサイト
+        {{ $post->title }} | お茶の間
     </x-slot>
 
     <main class="show">
@@ -58,7 +58,9 @@
         </ul>
     </div>
 
+    <div class="comment_area">
         <h2>コメントを投稿する</h2>
+    </div>
 
         <div>
         <form method="post" action="{{ route('posts.comments.store', $post) }}">
