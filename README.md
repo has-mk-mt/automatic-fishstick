@@ -1,2 +1,0 @@
-# このRepositoryについて
-このリポジトリはドットインストールの「Laravel入門」で使うGitHub Codespaces用のテンプレートです。
