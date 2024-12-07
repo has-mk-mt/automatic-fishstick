@@ -17,10 +17,8 @@ class Post extends Model
         'emotion',
     ];
 
-    //post->comments
     public function comments()
     {
         return $this->hasMany(Comment::class);
     }
-    //Post = $this
 }
