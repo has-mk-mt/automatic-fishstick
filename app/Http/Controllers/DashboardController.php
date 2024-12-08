@@ -8,11 +8,7 @@ class DashboardController extends Controller
 {
     public function show()
     {
-
-        if (auth()->user()->name !== 'admin') {
-            abort(403, 'このページにはアクセスできません。');
-        }
-
         return view('dashboard');
     }
 }
+
