@@ -14,4 +14,14 @@ class RoleUser extends Pivot
     protected $table = 'role_user';
 
     protected $fillable = ['role_id','user_id'];
+
+    public function user()
+    {
+        return $this->hasMany(User::class, 'user_id');
+    }
+
+    public function role()
+    {
+        return $this->hasMany(Role::class, 'role_id');
+    }
 }

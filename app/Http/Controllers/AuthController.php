@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 
 class AuthController extends Controller
 {
@@ -34,4 +36,14 @@ class AuthController extends Controller
 
         return redirect('/');
     }
+
+    public function boot(): void
+    {
+        $this->registerPolicies();
+
+        Gate::define('manage-users', function (User $user) {
+            return $user->roles->pluck('name')->contains('admin');
+        });
+    }
+
 }

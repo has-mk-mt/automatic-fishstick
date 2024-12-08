@@ -15,11 +15,15 @@
         @csrf
     </form>
 
-    @can('manage-users', auth()->user())
-    <a href="{{ route('dashboard') }}">管理者ページ</a>
-    @else
-        <p>アクセス権限がありません。</p>
-    @endcan
+    @extends('layouts.app')
+
+    @section('content')
+        <div class="container">
+            <h1>管理者専用ダッシュボード</h1>
+            <p>ようこそ、{{ auth()->user()->name }}さん！</p>
+        </div>
+    @endsection
+
 
 </body>
 </html>
