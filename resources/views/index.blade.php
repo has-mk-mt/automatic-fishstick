@@ -2,8 +2,6 @@
     <x-slot:title>
         お茶の間
     </x-slot>
-
-    <header> * -- お茶の間 -- *</header>
     <main>
         <h1>* -- お茶の間 -- *</h1>
         <div class="main_pic">
