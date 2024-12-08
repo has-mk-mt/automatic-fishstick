@@ -18,3 +18,15 @@ Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 Route::middleware(['auth', 'can:manage-users'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
 });
+Route::get('/admin', [AdminController::class, 'index'])->middleware('auth');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
+    Route::get('/admin/manage-users', [AdminController::class, 'manageUsers'])->name('admin.manage.users');
+});
+
+Route::get('/test-admin', function () {
+    $user = auth()->user();
+
+});
+

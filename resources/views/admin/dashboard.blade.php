@@ -14,5 +14,12 @@
     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
         @csrf
     </form>
+
+    @can('manage-users', auth()->user())
+    <a href="{{ route('dashboard') }}">管理者ページ</a>
+    @else
+        <p>アクセス権限がありません。</p>
+    @endcan
+
 </body>
 </html>
