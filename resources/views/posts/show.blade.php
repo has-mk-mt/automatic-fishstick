@@ -94,7 +94,7 @@
                 if (confirm('削除してよろしいですか？') === false) {
                     return;
                 }
-
+                
                 form.submit();
             });
 
