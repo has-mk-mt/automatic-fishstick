@@ -5,6 +5,7 @@ namespace App\Policies;
 use App\Models\User;
 use Illuminate\Auth\Access\Response;
 
+
 class AdminPolicy
 {
     /**
@@ -63,8 +64,9 @@ class AdminPolicy
     //     //
     // }
 
-    public function manage(User $user)
+    public function manage(User $user): bool
     {
+    return $user->roles()->where('name', 'admin')->exists();
         return $user->roles()->where('name', 'admin')->exists();
     }
 
