@@ -78,8 +78,6 @@
         </form>
         </div>
 
-
-
         <p class="back-link">
             <a href="{{ route('posts.index') }}">戻る</a>
         </p>

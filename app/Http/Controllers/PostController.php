@@ -9,7 +9,6 @@ use App\Models\Comment;
 
 class PostController extends Controller
 {
-
     public function index()
     {
         $posts = Post::latest()->get();

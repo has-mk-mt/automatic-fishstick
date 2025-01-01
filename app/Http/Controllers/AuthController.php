@@ -45,5 +45,4 @@ class AuthController extends Controller
             return $user->roles->pluck('name')->contains('admin');
         });
     }
-
 }
