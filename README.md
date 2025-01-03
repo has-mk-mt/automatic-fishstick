@@ -14,15 +14,34 @@
 ・投稿機能
 ・投稿編集機能
 ・投稿削除機能
+・バリデーション
 ・投稿に対するユーザー紐づけ機能(リレーション)
 ・投稿に対するコメント機能(リレーション)
 
-![スクリーンショット 2025-01-03 190951](https://github.com/user-attachments/assets/b5e0221d-bdcc-471d-87b4-c74cf42954ae)
-![スクリーンショット 2025-01-03 191001](https://github.com/user-attachments/assets/9324d993-a3d7-457b-a7fa-52218ffb24b5)
-![スクリーンショット 2025-01-03 191011](https://github.com/user-attachments/assets/0765b1c7-d31f-442f-b9d5-8c91315bd678)
-![スクリーンショット 2025-01-03 192808](https://github.com/user-attachments/assets/bd017a5c-bbed-43f7-8632-0655a7bd40e9)
-![スクリーンショット 2025-01-03 191031](https://github.com/user-attachments/assets/94c961d4-b51e-40f3-aa6c-8e5a1f58eae4)
-![スクリーンショット 2025-01-03 191042](https://github.com/user-attachments/assets/aaa1504c-173f-475a-8cb5-f5f4f345cd6e)
-![スクリーンショット 2025-01-03 191103](https://github.com/user-attachments/assets/154a869a-7b1d-454b-8e6a-0efa574bf348)
-![スクリーンショット 2025-01-03 191156](https://github.com/user-attachments/assets/f83c1cae-dc1f-4a10-b188-05af52768fe8)
-![スクリーンショット 2025-01-03 191209](https://github.com/user-attachments/assets/5303687f-2a25-4e29-8055-73dcce4286a8)
+(トップページ)
+![スクリーンショット 2025-01-03 193335](https://github.com/user-attachments/assets/5d3ec082-1b6d-48bb-99ee-b2a64d3be689)
+![スクリーンショット 2025-01-03 193347](https://github.com/user-attachments/assets/bc2b02aa-76ef-4585-9c27-7260382a27f0)
+![スクリーンショット 2025-01-03 194415](https://github.com/user-attachments/assets/e7d43689-4266-49f1-976e-a78dfa2d8f99)
+![スクリーンショット 2025-01-03 194435](https://github.com/user-attachments/assets/637503ab-ae7e-4c44-8975-57e893be8ef8)
+
+(ユーザー登録)
+![スクリーンショット 2025-01-03 193452](https://github.com/user-attachments/assets/01a05b34-9505-4d25-8c71-5d0e842eedb6)
+
+(ログインページ)
+![スクリーンショット 2025-01-03 193432](https://github.com/user-attachments/assets/2fed8145-3f69-4d63-8887-bac5393e770d)
+
+(投稿ページ)
+![スクリーンショット 2025-01-03 193411](https://github.com/user-attachments/assets/6b580cff-b99c-4e6c-aaf3-9c40ab4d9d9c)
+![スクリーンショット 2025-01-03 194608](https://github.com/user-attachments/assets/3632cc68-5251-4f59-a846-30ae597cdb70)
+
+(投稿詳細ページ)
+![スクリーンショット 2025-01-03 193543](https://github.com/user-attachments/assets/2e9d706a-aeca-4de9-864c-6ed31aac7427)
+![スクリーンショット 2025-01-03 194654](https://github.com/user-attachments/assets/8d167fa5-9f60-4079-8969-7c3091a5ea13)
+![スクリーンショット 2025-01-03 194704](https://github.com/user-attachments/assets/4050298e-66c5-4096-843c-ce3b188853a2)
+
+(投稿編集ページ)
+![スクリーンショット 2025-01-03 193634](https://github.com/user-attachments/assets/bced3a9b-56a3-45fb-8ed0-e63d13366212)
+
+(管理者ページ)
+![スクリーンショット 2025-01-03 193728](https://github.com/user-attachments/assets/d01c9586-4acc-4941-920f-ae00cf31c1da)
+
